@@ -19,6 +19,9 @@ const Contact = () => {
         (result) => {
           console.log(result);
           setFormStatus("Message sent successfully!");
+          
+          // Clear the form fields
+          e.target.reset();
         },
         (error) => {
           console.log(error.text); // Log the error text for debugging
