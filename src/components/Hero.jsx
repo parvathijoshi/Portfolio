@@ -3,7 +3,7 @@ const Hero = () => {
       <section className="min-h-screen flex items-center justify-center bg-white py-16 px-6">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-gray-800">
-            I have <span className="text-green-500">Creative Design</span> Experience
+            Experienced <span className="text-green-500">Software Developer</span> based in Canada
           </h2>
           <p className="text-gray-600 mt-4">
             I'm Parvathi, a Software Engineer, I've been helping businesses solve their problems with my design for 2 years.
