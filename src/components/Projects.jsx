@@ -51,17 +51,19 @@ const projects = [
             {projects.map((project, index) => (
               <div 
                 key={index} 
-                className="bg-white border border-gray-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105"
+                className="bg-white border border-gray-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 flex flex-col justify-between"
               >
-                <h3 className="text-2xl font-semibold text-gray-800">{project.title}</h3>
-                <p className="text-sm text-gray-500 mt-1">{project.duration} | {project.organization}</p>
-                
-                <div className="mt-4 space-y-3 text-gray-700">
-                  {project.description.map((point, i) => (
-                    <p key={i} className="flex items-start text-sm">
-                      <span className="text-[#E18AAA] mr-2">✔</span> {point}
-                    </p>
-                  ))}
+                <div>
+                  <h3 className="text-2xl font-semibold text-gray-800">{project.title}</h3>
+                  <p className="text-sm text-gray-500 mt-1">{project.duration} | {project.organization}</p>
+  
+                  <div className="mt-4 space-y-3 text-gray-700">
+                    {project.description.map((point, i) => (
+                      <p key={i} className="flex items-start text-sm">
+                        <span className="text-[#E18AAA] mr-2">✔</span> {point}
+                      </p>
+                    ))}
+                  </div>
                 </div>
   
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">
