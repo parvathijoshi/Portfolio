@@ -42,7 +42,7 @@ const projects = [
     return (
       <section id="projects" className="py-16 px-6 bg-gray-50">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-[#E18AAA]">Projects</h2>
+          <h2 className="text-4xl font-semibold text-[#E18AAA]">Projects</h2>
           <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
             A selection of projects that showcase my development expertise and problem-solving abilities.
           </p>
@@ -51,22 +51,22 @@ const projects = [
             {projects.map((project, index) => (
               <div 
                 key={index} 
-                className="bg-white border border-gray-200 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
+                className="bg-white border border-gray-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105"
               >
-                <h3 className="text-2xl font-bold text-gray-800">{project.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-800">{project.title}</h3>
                 <p className="text-sm text-gray-500 mt-1">{project.duration} | {project.organization}</p>
                 
-                <ul className="mt-4 text-gray-600 text-left space-y-2">
+                <div className="mt-4 space-y-3 text-gray-700">
                   {project.description.map((point, i) => (
-                    <li key={i} className="flex items-start">
+                    <p key={i} className="flex items-start text-sm">
                       <span className="text-[#E18AAA] mr-2">✔</span> {point}
-                    </li>
+                    </p>
                   ))}
-                </ul>
+                </div>
   
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="bg-[#E18AAA] text-white px-3 py-1 rounded-full text-sm">
+                    <span key={i} className="bg-[#E18AAA] text-white px-3 py-1 rounded-full text-xs font-semibold">
                       {tech}
                     </span>
                   ))}
