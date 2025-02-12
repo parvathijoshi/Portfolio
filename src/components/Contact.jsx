@@ -12,6 +12,7 @@ const Contact = () => {
     const templateId = "template_1zoqkx6";
     const publicKey = "7ecI0Cw2QeD7bJF70";
 
+    // Ensure the form fields are being passed correctly
     emailjs
       .sendForm(serviceId, templateId, e.target, publicKey)
       .then(
@@ -30,23 +31,24 @@ const Contact = () => {
     <section className="py-16 bg-gray-100 text-center">
       <h2 className="text-3xl font-bold text-gray-800">Let's Discuss Your Project</h2>
       <form className="mt-6" onSubmit={handleSubmit}>
+        {/* Ensure the name and email fields have matching names as in the EmailJS template */}
         <input
           className="border border-gray-300 p-2 rounded-md w-1/3 m-2"
           type="text"
-          name="user_name"
+          name="fullName" // This should match the template placeholder `{{fullName}}`
           placeholder="Full Name"
           required
         />
         <input
           className="border border-gray-300 p-2 rounded-md w-1/3 m-2"
           type="email"
-          name="user_email"
+          name="email" // This should match the template placeholder `{{email}}`
           placeholder="Your Email"
           required
         />
         <textarea
           className="border border-gray-300 p-2 rounded-md w-2/3 m-2"
-          name="message"
+          name="message" // This should match the template placeholder `{{message}}`
           placeholder="Message"
           required
         ></textarea>
