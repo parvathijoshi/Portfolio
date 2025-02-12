@@ -9,22 +9,22 @@ const Hero = () => {
           <img
             src={profilePicture}
             alt="Parvathi"
-            className="w-48 h-48 rounded-full border-4 border-green-500 shadow-lg object-cover" // Styling for a border and shadow effect
+            className="w-48 h-48 rounded-full border-4 border-[#E18AAA] shadow-lg object-cover" // Changed border color to #E18AAA
           />
         </div>
         
         <h2 className="text-4xl font-bold text-gray-800">
-          Experienced <span className="text-green-500">Software Engineer</span> based in Canada
+          Experienced <span className="text-[#E18AAA]">Software Engineer</span> based in Canada
         </h2>
         <p className="text-gray-600 mt-4">
           I'm Parvathi, a Software Engineer, I've been helping businesses solve their problems with my design for 2 years.
         </p>
         
         <div className="mt-6">
-          <button className="bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-700 mr-2">
+          <button className="bg-[#E18AAA] text-white px-5 py-2 rounded-md hover:bg-[#D37F92] mr-2">
             Contact Me
           </button>
-          <button className="text-green-500 border border-green-500 px-5 py-2 rounded-md hover:bg-green-500 hover:text-white">
+          <button className="text-[#E18AAA] border border-[#E18AAA] px-5 py-2 rounded-md hover:bg-[#E18AAA] hover:text-white">
             View Portfolio
           </button>
         </div>

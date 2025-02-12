@@ -42,7 +42,7 @@ const projects = [
     return (
       <section id="projects" className="py-16 px-6 bg-gray-50">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-green-600">Projects</h2>
+          <h2 className="text-4xl font-bold text-[#E18AAA]">Projects</h2>
           <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
             A selection of projects that showcase my development expertise and problem-solving abilities.
           </p>
@@ -59,14 +59,14 @@ const projects = [
                 <ul className="mt-4 text-gray-600 text-left space-y-2">
                   {project.description.map((point, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-green-500 mr-2">✔</span> {point}
+                      <span className="text-[#E18AAA] mr-2">✔</span> {point}
                     </li>
                   ))}
                 </ul>
   
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                    <span key={i} className="bg-[#E18AAA] text-white px-3 py-1 rounded-full text-sm">
                       {tech}
                     </span>
                   ))}
@@ -74,7 +74,7 @@ const projects = [
   
                 <a 
                   href={project.link} 
-                  className="mt-6 inline-block text-green-600 font-semibold hover:underline"
+                  className="mt-6 inline-block text-[#E18AAA] font-semibold hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
