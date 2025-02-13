@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaCode, FaTools, FaRocket, FaUserTie } from 'react-icons/fa'; // Importing icons
+import { FaCode, FaTools, FaRocket, FaUserCog } from 'react-icons/fa'; // Changed FaUserTie to FaUserCog
 import profilePicture from '../assets/profilepicture.jpg';
 
 const Hero = () => {
@@ -8,7 +8,7 @@ const Hero = () => {
     { text: "Software Engineer", icon: <FaCode className="inline-block text-[#E18AAA]" /> },
     { text: "Software Developer", icon: <FaTools className="inline-block text-[#E18AAA]" /> },
     { text: "DevOps Engineer", icon: <FaRocket className="inline-block text-[#E18AAA]" /> },
-    { text: "Release Engineer", icon: <FaUserTie className="inline-block text-[#E18AAA]" /> },
+    { text: "Release Engineer", icon: <FaUserCog className="inline-block text-[#E18AAA]" /> }, // Updated icon
   ];
   const [show, setShow] = useState(true);
 
@@ -29,7 +29,7 @@ const Hero = () => {
   }, [titles]);
 
   return (
-    <section id = "hero" className="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-100 to-purple-100 relative py-16 px-6">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-100 to-purple-100 relative py-16 px-6">
       {/* Background Illustration */}
       <div className="absolute top-0 left-0 w-full h-full bg-opacity-10 bg-no-repeat bg-cover bg-center" 
            style={{ backgroundImage: 'url("/illustration.png")' }}></div>
