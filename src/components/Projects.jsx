@@ -4,12 +4,7 @@ const projects = [
       duration: "Sep 2024 - Dec 2024",
       organization: "University of Windsor • Windsor, Ontario",
       tech: ["Django", "React", "PostgreSQL", "Docker", "Tailwind CSS", "Google Maps API"],
-      description: [
-        "Created a platform for efficient redistribution of surplus goods, including food and clothing to nearby NGOs.",
-        "Integrated geolocation feature using PostGIS to filter donation listings based on proximity and relevance.",
-        "Designed real-time item tracking features to facilitate communication and logistics between donors and NGOs.",
-        "Built APIs for creating, browsing, and reserving donations, ensuring smooth transactions and accessibility."
-      ],
+      description: "A platform to efficiently redistribute surplus goods to nearby NGOs, with real-time item tracking and geolocation-based listings.",
       link: "https://github.com/parvathijoshi/SamaritanConnect",
     },
     {
@@ -17,34 +12,50 @@ const projects = [
       duration: "Sep 2024 - Dec 2024",
       organization: "Rocket Innovation Studio • Windsor, Ontario",
       tech: ["React", "Node.js", "Express", "PostgreSQL", "Python", "BART", "NLP", "Figma", "Docker"],
-      description: [
-        "Developed an innovative platform for employees to submit, categorize, and manage ideas, integrating secure login with Node.js and React.",
-        "Designed an idea submission page with search, deletion, and tagging powered by BART NLP models, along with an approvals and drafts system using PostgreSQL.",
-        "Containerized the application using Docker and implemented microservices for scalability."
-      ],
+      description: "A platform for employees to submit, manage, and categorize ideas, featuring secure login and NLP-powered idea categorization.",
       link: "https://github.com/parvathijoshi/MindPalace-IdeaHub",
+    },
+    {
+      title: "Predictive Analysis of Employee Attrition",
+      duration: "May 2024 – Aug 2024",
+      organization: "University of Windsor • Windsor, Ontario",
+      tech: ["Python", "Jupyter Notebook", "Tableau", "PowerBI", "Pandas", "NumPy", "Scikit-learn"],
+      description: "Used ML models to predict employee turnover with 97% accuracy, visualized retention strategies with Tableau and PowerBI.",
+      link: "https://github.com/parvathijoshi/EmployeeAttritionPrediction",
     },
     {
       title: "Distributed File System Using Socket Programming",
       duration: "June 2024 - Aug 2024",
       organization: "University of Windsor • Windsor, Ontario",
       tech: ["C", "Linux"],
-      description: [
-        "Designed and implemented a distributed file system to handle file storage and retrieval across multiple servers.",
-        "Managed a system architecture that allowed up to 10 simultaneous client-server connections with efficient resource handling and error management.",
-        "Developed functionalities for uploading, downloading, deleting, and archiving files, improving system usability and performance."
-      ],
+      description: "Built a distributed file system supporting multiple client-server connections, with efficient file handling and error management.",
       link: "https://github.com/parvathijoshi/DistributedFileSystem-SocketProgramming",
-    }
+    },
+    {
+      title: "Property Cost Analysis System",
+      duration: "Jan 2024 – Apr 2024",
+      organization: "University of Windsor • Windsor, Ontario",
+      tech: ["Java", "Selenium", "HTML", "CSS", "JavaScript"],
+      description: "Created a system to analyze property rental costs in Canada using web scraping and advanced algorithms for cost prediction.",
+      link: "https://github.com/parvathijoshi/property-cost-analysis",
+    },
+    {
+      title: "Currency Detection App for the Visually Impaired",
+      duration: "Sept 2019 - Jan 2020",
+      organization: "APJ Abdul Kalam Technological University • Kerala, India",
+      tech: ["Java", "OCR", "Android Development"],
+      description: "Developed an Android app that identifies currency denominations using OCR and provides voice-based feedback.",
+      link: "#",
+    },
   ];
   
   const Projects = () => {
     return (
-      <section id="projects" className="py-16 px-6 bg-gray-50">
+      <section id="projects" className="py-16 px-6 bg-gradient-to-r from-pink-100 to-purple-100">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-semibold text-[#E18AAA]">Projects</h2>
           <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-            A selection of projects that showcase my development expertise and problem-solving abilities.
+            Showcasing a selection of impactful projects that demonstrate my skills and creativity.
           </p>
   
           <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -57,13 +68,7 @@ const projects = [
                   <h3 className="text-2xl font-semibold text-gray-800">{project.title}</h3>
                   <p className="text-sm text-gray-500 mt-1">{project.duration} | {project.organization}</p>
   
-                  <div className="mt-4 space-y-3 text-gray-700">
-                    {project.description.map((point, i) => (
-                      <p key={i} className="flex items-start text-sm">
-                        <span className="text-[#E18AAA] mr-2">✔</span> {point}
-                      </p>
-                    ))}
-                  </div>
+                  <p className="mt-4 text-gray-700">{project.description}</p>
                 </div>
   
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">
